@@ -57,8 +57,9 @@
                 <el-form-item>
 
                 </el-form-item>
-                <el-button @click="addMovie()">新增</el-button>
+
             </el-form>
+            <el-button @click="addMovie()">新增</el-button>
         </el-dialog>
 
     </div>
