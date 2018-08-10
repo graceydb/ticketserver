@@ -1,0 +1,79 @@
+<template>
+  <div id="app">
+    <el-container style="height: 100%;">
+      <el-aside width="200px" style="background-color: #20222A;">
+        <el-menu
+                default-active="1-1"
+                class="el-menu-vertical-demo"
+                background-color="#20222A"
+                text-color="#fff"
+                active-text-color="#ffd04b">
+          <el-submenu index="1">
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>影片管理</span>
+            </template>
+            <el-menu-item index="1-1">选项1</el-menu-item>
+            <el-menu-item index="1-2">选项2</el-menu-item>
+            <el-menu-item index="1-3">选项3</el-menu-item>
+          </el-submenu>
+          <el-menu-item index="2">
+            <i class="el-icon-document"></i>
+            <span slot="title">影院管理</span>
+          </el-menu-item>
+          <el-menu-item index="3">
+            <i class="el-icon-menu"></i>
+            <span slot="title">资讯管理</span>
+          </el-menu-item>
+          <el-menu-item index="4">
+            <i class="el-icon-setting"></i>
+            <span slot="title">订单管理</span>
+          </el-menu-item>
+          <el-menu-item index="5">
+            <i class="el-icon-setting"></i>
+            <span slot="title">用户管理</span>
+          </el-menu-item>
+        </el-menu>
+      </el-aside>
+      <el-container>
+        <el-header height="60px" style="background-color: #fff;border-bottom: 1px solid #F2F6FC;">
+          header
+        </el-header>
+        <el-main>
+          main
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
+</template>
+
+<script>
+
+  export default {
+      data(){
+          return {
+
+          }
+      }
+  }
+
+</script>
+
+<style>
+  html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    background-color: #f2f2f2;
+  }
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+  }
+  .el-menu{
+    border-right: 0px !important;
+  }
+</style>
