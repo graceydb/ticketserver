@@ -8,15 +8,12 @@
                 background-color="#20222A"
                 text-color="#fff"
                 active-text-color="#ffd04b">
-          <el-submenu index="1">
-            <template slot="title">
-              <i class="el-icon-location"></i>
-              <span>影片管理</span>
-            </template>
-            <el-menu-item index="1-1">选项111</el-menu-item>
-            <el-menu-item index="1-2">选项2</el-menu-item>
-            <el-menu-item index="1-3">选项3</el-menu-item>
-          </el-submenu>
+            <el-menu-item index="1">
+                <i class="el-icon-location"></i>
+                <router-link to="/movie">
+                    影片管理
+                </router-link>
+            </el-menu-item>
           <el-menu-item index="2">
             <i class="el-icon-document"></i>
             <span slot="title">影院管理</span>
@@ -40,7 +37,7 @@
           header
         </el-header>
         <el-main>
-          main
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -76,4 +73,12 @@
   .el-menu{
     border-right: 0px !important;
   }
+    .router-link-active{
+        color: #fff;
+        text-decoration: none;
+    }
+    .block{
+        background-color: #fff;
+        padding: 10px;
+    }
 </style>
